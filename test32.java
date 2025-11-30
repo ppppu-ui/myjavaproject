@@ -25,6 +25,9 @@ class BankAccount2 {
     public String toFileString() {
         return id + "," + name + "," + balance;
     }
+    public String toString() {
+        return "账户ID："+id + ", 账户名：" + name + ", 余额：" + balance;
+    }
     public static BankAccount2 fromFileString(String line) {
         String[] parts = line.split(",");
         return new BankAccount2(parts[0], parts[1], Double.parseDouble(parts[2]));
@@ -40,6 +43,10 @@ class BankSystem {
         if (!accounts.containsKey(id)) {
             accounts.put(id, new BankAccount2(id, name, balance));
             saveToFile();
+        }else{
+            System.out.println("创建失败，账户已存在！");
+            BankAccount2 acc = accounts.get(id);
+            System.out.println(acc);
         }
     }
     public synchronized boolean deposit(String id, double amount) {

@@ -41,7 +41,7 @@ class BankAccount{
     }
 }
 
-public class test7 {
+public class test07 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入银行账户号码：");
@@ -57,13 +57,10 @@ public class test7 {
         account.deposit(amount1);
         System.out.println("请输入取款金额:");
         double amount2 = scanner.nextDouble();
-<<<<<<< HEAD
         account.withdraw(amount2);
         System.out.println("查询余额：");
-=======
         System.out.println("查询余额：");
         account.withdraw(amount2);
->>>>>>> cb367699a10742b048d6c24efa60674b85251d37
         account.checkBalance();
     }
 }

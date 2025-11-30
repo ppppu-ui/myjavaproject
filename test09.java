@@ -7,7 +7,7 @@ class NegativeNumException extends Exception{
         super(message);
     }
 }
-public class test9 {
+public class test09 {
     public static void main(String[] args){
         try {
             function();

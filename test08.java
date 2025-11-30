@@ -36,7 +36,7 @@ class product{
         return String.format("商品id："+id+"商品品名："+name+"商品价格："+price);
     }
 }
-public class test8 {
+public class test08 {
     Scanner scanner = new Scanner(System.in);
     ArrayList<product> productList = new ArrayList<>();
     public void addProduct(){
@@ -77,7 +77,7 @@ public class test8 {
         System.out.println("未找到商品");
     }
     public static void main(String[] args){
-        test8 ProductManage = new test8();
+        test08 ProductManage = new test08();
         ProductManage.addProduct();
         ProductManage.addProduct();
         ProductManage.addProduct();
