@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class test2{
+public class test02 {
     public static int add(int x,int y){
         return x+y;
     }

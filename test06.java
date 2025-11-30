@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class test6 {
+public class test06 {
     public static void main (String [] args){
         Scanner scanner = new Scanner (System.in);
         System.out.println("请输入第一个数字: ");
